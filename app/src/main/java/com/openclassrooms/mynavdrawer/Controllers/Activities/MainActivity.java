@@ -51,30 +51,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
 
-        int id = item.getItemId();
-
-        // 6 - Show fragment after user clicked on a menu item
-        switch (id){
-            case R.id.activity_main_drawer_news :
-                this.showFragment(FRAGMENT_NEWS);
-                break;
-            case R.id.activity_main_drawer_profile:
-                this.showFragment(FRAGMENT_PROFILE);
-                break;
-            case R.id.activity_main_drawer_settings:
-                this.showFragment(FRAGMENT_PARAMS);
-                break;
-            default:
-                break;
-        }
-
-        this.drawerLayout.closeDrawer(GravityCompat.START);
-
-        return true;
-    }
     // ---------------------
     // FRAGMENTS
     // ---------------------

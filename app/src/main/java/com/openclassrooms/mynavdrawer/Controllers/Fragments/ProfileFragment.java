@@ -16,7 +16,7 @@ import com.openclassrooms.mynavdrawer.R;
 public class ProfileFragment extends Fragment {
 
     public static ProfileFragment newInstance() {
-        return (new NewsFragment());
+        return (new ProfileFragment());
     }
 
 
